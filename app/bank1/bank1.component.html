@@ -1,0 +1,30 @@
+<body>
+<form [formGroup]="banking">
+    <h1>BANK SEARCH APPLICATION</h1>
+    <div>
+    <select name="select">
+    <option id="a1" value="mumbaibank" >Mumbai</option>
+    <option id="a2"  value="delhibank" >Delhi</option>
+    <option id="a3"  value="kolkatabank" >Kolkata</option>
+    <option id="a4"  value="banglorebank" >Banglore</option>
+    <option id="a5"  value="cuttakbank" > Cuttak</option>
+    </select><br>
+    </div>
+    <table>
+        <tr>
+            <h3>List of Banks</h3>
+            
+            <th><input id="left" type="search" formControlName="bank" >&nbsp;<button (click)="open(banking.value)">></button></th>
+    </tr>
+      <tr>
+          <td>Actions</td>
+          <td>Bank Name</td>
+          <td>IFSC Code</td>
+          <td>Bank ID</td>
+          <td>Branch</td>
+      </tr>
+       <tr *ngFor="let val of banks;let i = index">
+       </tr>
+    </table>
+    </form>
+</body>

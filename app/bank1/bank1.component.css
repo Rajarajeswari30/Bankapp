@@ -1,0 +1,16 @@
+body{
+    background-color: silver;
+}
+h1{
+    text-align: center;
+ }
+ select{
+    width:1480px;
+    height: 30px;
+ }
+ th,td{
+    width:400px
+ }
+ h3{
+     margin-right: 100px;
+ }
